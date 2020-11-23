@@ -1,0 +1,18 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.apache.juneau:juneau-rest-client:8.2.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
